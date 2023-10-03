@@ -40,7 +40,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -302,7 +301,11 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-title {
@@ -349,6 +352,8 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
   /* row-gap: 48px; */
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-text {
@@ -793,6 +798,10 @@ img {
   }  
 
   
+
+
+
+  
 }
 
 @media screen and (max-width: 1157px) {
@@ -803,6 +812,15 @@ img {
   .footer .text {
     margin-bottom: 72px;
   }
+
+  .team-list {
+    gap: 64px 24px;
+    flex-direction: row;
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -861,6 +879,12 @@ img {
   .portfolio-list {
     gap: 48px 24px;
   }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
 
 
 
