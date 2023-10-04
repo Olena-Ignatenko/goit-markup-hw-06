@@ -148,32 +148,31 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  padding: 188px 0;
-  height: 600px;
+  padding: 72px 0;
   text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/Dark-bg_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07; /* 107.143% */
+  line-height: 1.11; /* 107.143% */
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   font-family: inherit;
-  max-width: 496px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 288px;
+  margin: 0 auto 72px;
+  min-height: 160px;
 }
 
 .button {
@@ -187,11 +186,11 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  display: block;
+  display: inline-flex;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
-  margin: 48px auto 0;
+  margin: 0 auto;
   min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -217,6 +216,9 @@ img {
 .advantage-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .list-wraper {
@@ -273,17 +275,22 @@ img {
 
 .subtitle {
   font-family: inherit;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* 120% */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; 
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .advantage-text .text-description {
   margin-bottom: 0;
+}
+
+.advantage-text {
+  font-weight: 500;
 }
 
 .text {
@@ -797,9 +804,18 @@ img {
     gap: 72px 24px;
   }  
 
-  
+   .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin: 0 auto 36px;
+  }
 
-
+  .hero {
+  padding: 112px 0;  
+}
 
   
 }
@@ -818,8 +834,7 @@ img {
     flex-direction: row;
   }
 
-
-
+  
 
 }
 
@@ -885,7 +900,30 @@ img {
     gap: 24px;
   }
 
+  .advantage-list {
+   flex-wrap: nowrap; 
+  }
 
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    text-align: start;
+  }
+
+  .advantage-text {
+  font-weight: 400;
+}
+
+  .hero {
+    padding: 188px 0;    
+}
+
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+
+ 
 
 
 }
@@ -899,8 +937,60 @@ img {
     text-align: start;
   }
 
-  
+  .subtitle {
+    text-align: start;
+  }
 
 
 
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg_tab.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg_mob@2x.jpg)
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg_tab@2x.jpg)
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg@2x.jpg)
+  }
 }
