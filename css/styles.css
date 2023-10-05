@@ -977,6 +977,9 @@ img {
     min-height: 584px;
     width: 408px;
   }
+  .footer-subscribe-input {
+    min-width: 264px;
+  }
 }
 
 @media screen and (max-width: 1157px) {
