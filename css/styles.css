@@ -992,10 +992,6 @@ img {
     flex-direction: row;
   }
 
-  .container {
-    margin: 0;
-  }
-
   .header .logo {
     margin-right: 120px;
   }
