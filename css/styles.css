@@ -414,15 +414,6 @@ img {
   margin-bottom: 0;
 }
 
-.advantage-text {
-  font-weight: 500;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
-  color: inherit;
-  margin-bottom: 8px;
-}
 
 .text {
   font-family: inherit;
@@ -879,6 +870,16 @@ img {
   .container {
     width: 320px;
   }
+
+  .advantage-text {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: inherit;
+    margin-bottom: 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -988,6 +989,16 @@ img {
   .advantage-list {
     gap: 24px;
   }
+
+  .advantage-text {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: inherit;
+    margin-bottom: 8px;
+  }
 }
 
 @media screen and (max-width: 1157px) {
@@ -1007,7 +1018,8 @@ img {
   .header .logo {
     margin-right: 120px;
   }
-}
+
+ }
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1095,11 +1107,7 @@ img {
     margin: 0 auto 48px;
   }
 
-  .header .logo {
-    margin-right: 76px;
-    margin-left: 156px;
-  }
-
+  
   .header .container {
     justify-content: space-between;
   }
